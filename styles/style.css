@@ -33,7 +33,7 @@ main > section {
   color: #424242;
 }
 
-.text-lite-gray {
+.text-light-gray {
   color: #727272;
 }
 
@@ -127,6 +127,38 @@ main > section {
   font-weight: 500;
 }
 
+/* Features you will love & enjoy */
+
+.enjoy{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+#enjoy-title{
+  border-left: #FF900E solid;
+  padding-left: 20px;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.enjoy-card{
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.enjoy-card .enjoy-card-title{
+  font-size: 1.25rem;
+  font-weight: 600;
+  /* padding: 30px; */
+}
+
+#experience-year{
+  font-size: 4rem;
+  font-weight: 700;
+
+}
 
 
 /* Some Facts styles  */
@@ -188,6 +220,19 @@ main > section {
   filter: grayscale(100);
 }
 
+.architect {
+  position: relative;
+}
+
+#experience-badge {
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -90px;
+}
 
 /* responsive media query */
 
@@ -198,6 +243,20 @@ main > section {
   .features {
     flex-direction: column;
   }
+
+  .enjoy{
+  flex-direction: column;
+}
+
+.architect{
+  position: relative;
+}
+  #experience-badge {
+    position: static;
+    transform: none;
+    margin: 20px 0 0 0;
+  }
+
 
   .features-img-container ,
    .facts-container ,
@@ -215,6 +274,11 @@ main > section {
     justify-items: center;
     gap: 24px;
   }
+  #experience-badge{
+   margin-left: 20px;  
+   margin-top: 20px;  
+  }
+
 }
 
 /* medium size device  */
@@ -223,6 +287,11 @@ main > section {
   .features{
     flex-direction: column;
   }
+    .enjoy{
+  flex-direction: column;
+}
+
+
  .sponsor-companies, .facts-container{
    grid-template-columns: repeat(2, 1fr);
    gap: 40px;
